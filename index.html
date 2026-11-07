@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вилла де Бурабай — зона отдыха в Боровом | Бронирование номеров у озера</title>
+  <meta name="description" content="Экологичная зона отдыха в Бурабае (Боровом). Уютные номера у озера, баня, конные прогулки, катер. Онлайн-бронирование с авансом и мгновенным подтверждением в WhatsApp." />
+  <meta name="keywords" content="отдых в Боровом, база отдыха Бурабай, вилла Бурабай, бронирование Боровое, отдых Казахстан" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>" />
+</head>
+<body data-lang="ru">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#hero" aria-label="Вилла де Бурабай">
+        <span class="logo__mark">🌲</span>
+        <span class="logo__text">Вилла де Бурабай</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link" data-i18n="nav.about">О зоне</a>
+        <a href="#rooms" class="nav__link" data-i18n="nav.rooms">Номера</a>
+        <a href="#activities" class="nav__link" data-i18n="nav.activities">Досуг</a>
+        <a href="#location" class="nav__link" data-i18n="nav.location">Как добраться</a>
+        <a href="#booking" class="nav__link nav__link--cta" data-i18n="nav.booking">Забронировать</a>
+      </nav>
+      <div class="header__controls">
+        <div class="lang-switch" role="group" aria-label="Язык">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="kz">KZ</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__scene" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#cde7f0"/>
+            <stop offset="55%" stop-color="#e8f3ee"/>
+            <stop offset="100%" stop-color="#f6efe2"/>
+          </linearGradient>
+          <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7fb8c9"/>
+            <stop offset="100%" stop-color="#4f8ba3"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="700" fill="url(#sky)"/>
+        <circle cx="1150" cy="140" r="70" fill="#f4d58d" opacity=".9"/>
+        <g fill="#8aa893" opacity=".85">
+          <path d="M0 380 Q 200 260 420 340 T 900 320 T 1440 350 V700 H0 Z"/>
+        </g>
+        <g fill="#5b7a63">
+          <path d="M0 430 Q 260 330 520 400 T 1100 390 T 1440 420 V700 H0 Z"/>
+        </g>
+        <g>
+          <ellipse cx="720" cy="620" rx="820" ry="120" fill="url(#lake)"/>
+          <ellipse cx="720" cy="600" rx="820" ry="80" fill="#9cc8d6" opacity=".55"/>
+        </g>
+        <g fill="#2f4f3a">
+          <path d="M180 480 l28 -90 28 90 z"/>
+          <path d="M240 490 l34 -110 34 110 z"/>
+          <path d="M1100 470 l30 -96 30 96 z"/>
+          <path d="M1170 485 l36 -120 36 120 z"/>
+          <path d="M1240 478 l26 -84 26 84 z"/>
+        </g>
+        <g fill="#3c5f47">
+          <path d="M60 500 l36 -120 36 120 z"/>
+          <path d="M130 510 l44 -146 44 146 z"/>
+          <path d="M1330 495 l40 -130 40 130 z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Бурабай · Казахстан</p>
+      <h1 class="hero__title" data-i18n="hero.title">Тишина сосен.<br/>Отражение гор в озере.<br/>Ваш отдых — в одном клике.</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">Экологичная зона отдыха на берегу. Бронируйте номер онлайн, оплачивайте аванс и получайте подтверждение в WhatsApp за минуту.</p>
+      <div class="hero__cta">
+        <a href="#booking" class="btn btn--primary btn--lg" data-i18n="hero.cta1">Забронировать номер</a>
+        <a href="#activities" class="btn btn--ghost btn--lg" data-i18n="hero.cta2">Чем заняться</a>
+      </div>
+      <div class="hero__trust">
+        <div><strong>4.9</strong><span data-i18n="hero.trust1">рейтинг гостей</span></div>
+        <div><strong>24/7</strong><span data-i18n="hero.trust2">ИИ-помощник</span></div>
+        <div><strong>~5 мин</strong><span data-i18n="hero.trust3">до подтверждения</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section__title" data-i18n="about.title">О зоне отдыха</h2>
+      <p class="section__lead" data-i18n="about.lead">«Вилла де Бурабай» — небольшая экологичная зона отдыха в сосновом бору на берегу озера. Мы бережём тишину, чистоту и атмосферу — чтобы вы выдохнули.</p>
+      <div class="features">
+        <article class="feature">
+          <div class="feature__icon">🌲</div>
+          <h3 data-i18n="about.f1t">Сосновый бор</h3>
+          <p data-i18n="about.f1d">Номера и домики прячутся среди вековых сосен — воздух, который хочется запомнить.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">💧</div>
+          <h3 data-i18n="about.f2t">Озеро в 2 минутах</h3>
+          <p data-i18n="about.f2d">Собственный спуск к воде, песчаный пляж, прокат сапов и лодок.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">🔥</div>
+          <h3 data-i18n="about.f3t">Баня на дровах</h3>
+          <p data-i18n="about.f3d">Настоящая русская баня с купелью — расслабление после горных маршрутов.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">🐴</div>
+          <h3 data-i18n="about.f4t">Конные прогулки</h3>
+          <p data-i18n="about.f4d">Маршруты с инструктором по сосновым тропам — для новичков и опытных.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY (simple gradient cards) ===================== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <h2 class="section__title" data-i18n="gallery.title">Атмосфера Бурабая</h2>
+      <div class="gallery__grid">
+        <figure class="gallery__item" data-grad="lake"><figcaption data-i18n="gallery.g1">Озеро на рассвете</figcaption></figure>
+        <figure class="gallery__item" data-grad="pines"><figcaption data-i18n="gallery.g2">Сосновый бор</figcaption></figure>
+        <figure class="gallery__item" data-grad="mount"><figcaption data-i18n="gallery.g3">Гора Болектай</figcaption></figure>
+        <figure class="gallery__item" data-grad="bath"><figcaption data-i18n="gallery.g4">Баня у купели</figcaption></figure>
+        <figure class="gallery__item" data-grad="horse"><figcaption data-i18n="gallery.g5">Конные тропы</figcaption></figure>
+        <figure class="gallery__item" data-grad="winter"><figcaption data-i18n="gallery.g6">Зимний Бурабай</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROOMS + AVAILABILITY ===================== -->
+  <section class="section rooms" id="rooms">
+    <div class="container">
+      <h2 class="section__title" data-i18n="rooms.title">Свободные номера</h2>
+      <p class="section__lead" data-i18n="rooms.lead">Выберите даты заезда и выезда — покажем свободные номера и рассчитаем аванс.</p>
+
+      <div class="booking-bar card">
+        <div class="field">
+          <label for="checkin" data-i18n="booking.checkin">Заезд</label>
+          <input type="date" id="checkin" />
+        </div>
+        <div class="field">
+          <label for="checkout" data-i18n="booking.checkout">Выезд</label>
+          <input type="date" id="checkout" />
+        </div>
+        <div class="field">
+          <label for="guests" data-i18n="booking.guests">Гостей</label>
+          <select id="guests">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+          </select>
+        </div>
+        <button class="btn btn--primary" id="btnFindRooms" data-i18n="booking.find">Найти номера</button>
+      </div>
+
+      <div class="calendar-hint" id="calendarHint">
+        <span class="dot dot--free"></span><span data-i18n="calendar.free">свободно</span>
+        <span class="dot dot--busy"></span><span data-i18n="calendar.busy">занято</span>
+        <span class="dot dot--sel"></span><span data-i18n="calendar.selected">вы выбрали</span>
+      </div>
+
+      <div class="rooms__grid" id="roomsGrid"><!-- заполняется JS --></div>
+    </div>
+  </section>
+
+  <!-- ===================== ACTIVITIES ===================== -->
+  <section class="section activities" id="activities">
+    <div class="container">
+      <h2 class="section__title" data-i18n="activities.title">Чем заняться в Бурабае</h2>
+      <p class="section__lead" data-i18n="activities.lead">Активности можно добавить к брони или заказать отдельно — администратор подтвердит время.</p>
+      <div class="activities__grid" id="activitiesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKING FORM / MY BOOKING ===================== -->
+  <section class="section booking" id="booking">
+    <div class="container booking__layout">
+      <div class="card booking__form-wrap">
+        <h2 class="section__title" data-i18n="booking.title">Бронирование</h2>
+        <p class="muted" id="bookingSummary" data-i18n="booking.empty">Выберите номер выше, чтобы начать бронирование.</p>
+
+        <form id="bookingForm" class="form" hidden>
+          <div class="form__row">
+            <div class="field">
+              <label for="fio" data-i18n="form.fio">ФИО</label>
+              <input id="fio" name="fio" required placeholder="Иванов Иван" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="phone" data-i18n="form.phone">Телефон (WhatsApp)</label>
+              <input id="phone" name="phone" type="tel" required placeholder="+7 7XX XXX-XX-XX" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="comment" data-i18n="form.comment">Комментарий</label>
+              <input id="comment" name="comment" placeholder="Детская кроватка, ранний заезд…" />
+            </div>
+          </div>
+
+          <div class="payment">
+            <h3 data-i18n="pay.title">Аванс 30%</h3>
+            <p class="muted" data-i18n="pay.desc">Демонстрационный платёж — списания не будет.</p>
+            <div class="payment__methods">
+              <label class="pay-method"><input type="radio" name="pay" value="kaspi" checked /><span>Kaspi Pay</span></label>
+              <label class="pay-method"><input type="radio" name="pay" value="epay" /><span>EPay (Halyk)</span></label>
+              <label class="pay-method"><input type="radio" name="pay" value="stripe" /><span>Stripe</span></label>
+            </div>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" id="agree" required />
+            <span data-i18n="form.agree">Согласен с условиями проживания и обработкой персональных данных</span>
+          </label>
+          <label class="check">
+            <input type="checkbox" id="marketing" />
+            <span data-i18n="form.marketing">Хочу получать уведомления об акциях в WhatsApp</span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block" data-i18n="booking.pay">Оплатить аванс и забронировать</button>
+        </form>
+
+        <div class="booking-result" id="bookingResult" hidden>
+          <div class="booking-result__icon">✅</div>
+          <h3 data-i18n="result.title">Бронь подтверждена</h3>
+          <p><span data-i18n="result.code">Код брони</span>: <strong id="resCode"></strong></p>
+          <p id="resDetails"></p>
+          <p class="muted" data-i18n="result.note">Мы отправили подтверждение и маршрут 2GIS в ваш WhatsApp (симуляция).</p>
+          <div class="booking-result__actions">
+            <button class="btn btn--ghost" id="btnCopyCode" data-i18n="result.copy">Скопировать код</button>
+            <a class="btn btn--ghost" id="btn2gisLink" target="_blank" rel="noopener">2GIS</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card my-booking">
+        <h3 data-i18n="my.title">Моя бронь</h3>
+        <p class="muted" data-i18n="my.lead">Уже бронировали? Введите телефон и код брони.</p>
+        <div class="field"><label for="myPhone" data-i18n="form.phone">Телефон</label><input id="myPhone" type="tel" /></div>
+        <div class="field"><label for="myCode" data-i18n="my.code">Код брони</label><input id="myCode" placeholder="BRB-2026-XXXX" /></div>
+        <button class="btn btn--secondary btn--block" id="btnFindMy" data-i18n="my.find">Найти бронь</button>
+        <div id="myResult" class="my-result" hidden></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== LOCATION ===================== -->
+  <section class="section location" id="location">
+    <div class="container">
+      <h2 class="section__title" data-i18n="loc.title">Как добраться</h2>
+      <div class="location__layout">
+        <div class="card map" id="mapCard">
+          <div class="map__canvas" role="img" aria-label="Карта Бурабая">
+            <svg viewBox="0 0 600 400" class="map__svg">
+              <rect width="600" height="400" fill="#e3efe7"/>
+              <path d="M40 320 Q 160 260 300 300 T 580 280" stroke="#9ec4b4" stroke-width="18" fill="none" opacity=".6"/>
+              <path d="M0 200 Q 200 140 380 190 T 600 170" stroke="#c9dfd2" stroke-width="10" fill="none"/>
+              <ellipse cx="420" cy="240" rx="120" ry="55" fill="#9cc8d6" opacity=".8"/>
+              <g fill="#3c5f47">
+                <path d="M120 260 l14 -44 14 44 z"/><path d="M160 270 l18 -58 18 58 z"/>
+                <path d="M210 255 l15 -48 15 48 z"/><path d="M90 250 l12 -38 12 38 z"/>
+              </g>
+              <g transform="translate(430,205)">
+                <path d="M0 0 c-10 0 -18 8 -18 18 0 12 18 30 18 30 s18 -18 18 -30 c0 -10 -8 -18 -18 -18 z" fill="#d8574d"/>
+                <circle r="6" cy="18" fill="#fff"/>
+              </g>
+            </svg>
+            <div class="map__label">Вилла де Бурабай</div>
+          </div>
+          <div class="map__actions">
+            <a class="btn btn--primary" id="btn2gis" target="_blank" rel="noopener">2GIS</a>
+            <a class="btn btn--ghost" id="btnGoogle" target="_blank" rel="noopener">Google Maps</a>
+            <a class="btn btn--ghost" id="btnYandex" target="_blank" rel="noopener">Яндекс Карты</a>
+          </div>
+        </div>
+        <div class="location__info">
+          <div class="card info-block">
+            <h3 data-i18n="loc.fromAstana">Из Астаны</h3>
+            <p data-i18n="loc.fromAstanaD">~250 км, 3 часа по трассе Астана–Щучинск. Удобнее всего на автомобиле или нашем трансфере.</p>
+          </div>
+          <div class="card info-block">
+            <h3 data-i18n="loc.transfer">Трансфер</h3>
+            <p data-i18n="loc.transferD">Организуем трансфер от Щучинска, Кокшетау или Астаны. Укажите при бронировании.</p>
+          </div>
+          <div class="card info-block">
+            <h3 data-i18n="loc.coords">Координаты</h3>
+            <p class="mono">53.0833° N, 70.3000° E</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / REQUEST ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="card contact__card">
+        <div>
+          <h2 class="section__title" data-i18n="contact.title">Остались вопросы?</h2>
+          <p class="muted" data-i18n="contact.lead">Оставьте заявку — перезвоним в течение 15 минут в рабочее время или ответьте ИИ-помощнику сразу.</p>
+        </div>
+        <form id="requestForm" class="form form--inline">
+          <input id="reqName" placeholder="Ваше имя" required />
+          <input id="reqPhone" type="tel" placeholder="+7 7XX XXX-XX-XX" required />
+          <button class="btn btn--primary" data-i18n="contact.send">Перезвоните мне</button>
+        </form>
+        <p class="form-msg" id="requestMsg" hidden></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="logo logo--footer"><span class="logo__mark">🌲</span><span class="logo__text">Вилла де Бурабай</span></div>
+        <p class="muted" data-i18n="footer.tag">Экологичный отдых на берегу озера</p>
+      </div>
+      <div class="footer__col">
+        <strong data-i18n="footer.contacts">Контакты</strong>
+        <a href="tel:+77001234567">+7 700 123-45-67</a>
+        <a href="mailto:hello@villadeburabay.kz">hello@villadeburabay.kz</a>
+        <span>Казахстан, Акмолинская обл., Бурабай</span>
+      </div>
+      <div class="footer__col">
+        <strong data-i18n="footer.docs">Документы</strong>
+        <a href="#" data-i18n="footer.rules">Правила проживания</a>
+        <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+        <a href="#" data-i18n="footer.offer">Публичная оферта</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span data-i18n="footer.demo">Демо-версия по PRD · 2026 · Оплата и уведомления — симуляция</span>
+    </div>
+  </footer>
+
+  <!-- ===================== AI CHAT WIDGET ===================== -->
+  <button class="chat-fab" id="chatFab" aria-label="ИИ-помощник">
+    <span>💬</span>
+  </button>
+  <div class="chat" id="chat" hidden>
+    <div class="chat__header">
+      <div>
+        <strong data-i18n="chat.title">ИИ-помощник Бурабай</strong>
+        <span class="chat__status" data-i18n="chat.online">онлайн · отвечает мгновенно</span>
+      </div>
+      <button class="chat__close" id="chatClose" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="chat__body" id="chatBody"></div>
+    <div class="chat__quick" id="chatQuick"></div>
+    <form class="chat__input" id="chatForm">
+      <input id="chatText" placeholder="Задайте вопрос…" autocomplete="off" />
+      <button class="btn btn--primary btn--icon" aria-label="Отправить">➤</button>
+    </form>
+  </div>
+
+  <!-- WhatsApp simulation toast -->
+  <div class="toast" id="toast" hidden>
+    <div class="toast__card">
+      <div class="toast__head">
+        <span class="toast__wa">🟢 WhatsApp</span>
+        <button class="toast__close" id="toastClose">✕</button>
+      </div>
+      <div class="toast__body" id="toastBody"></div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
